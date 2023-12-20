@@ -1,0 +1,104 @@
+      *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background: url('./images/beautiful_6.png') center / cover no-repeat;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container
+    {
+        position: relative;
+        background: rgba(0, 0, 0, 0.787);
+        color:#fff;
+        min-height: 400px;
+        width:80%;
+        border:none;
+        border-radius: 10px;
+        display: grid;
+        grid-template:repeat(7, 1fr) / repeat(6,1fr) ;
+        grid-template-areas: 
+        'h h h h h h'
+        'f f f f f f'
+        'f f f f f f'
+        'f f f f f f'
+        'f f f f f f'
+        'f f f f f f'
+        'r r r r r r';
+    }
+    
+    .container span
+    {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        grid-area: h;
+        
+    }
+    .erro{
+        grid-area: r;
+        display: flex;
+        justify-content: center;
+        color: rgba(255, 0, 0, 0.884);
+    }
+    .container form
+    {
+    grid-area: f;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+    justify-content: center;
+    }
+    .container form label 
+    {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .container form input
+    {
+        height: 35px;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        color:#fff;
+        padding-left: 10px;
+        border-bottom: 2px solid wheat;
+    }
+    button{
+        background: rgba(255, 42, 0, 0.838);
+        height: 35px;
+        width: 80%;
+        border: none;
+        margin: 30px auto;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        color: #fff;
+    }
+    #password-container
+    {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    #password-container #show-password{
+    position: absolute;
+    color: lightgrey;
+    right: 3%;
+    }
+    #password-container #password{
+        width: 100%;
+        padding-right: 50px;
+    }
+    @media screen and (min-width:905px){
+        .container{
+            width: 50%;
+        }
+    }
+    
