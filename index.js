@@ -19,7 +19,7 @@ const _router = express.Router();
 
 const connectDB = async () =>{
     try {
-      await mongoose.connect(process.env.LOCAL_CON_STR).then(()=>{
+      await mongoose.connect(process.env.CON_STRING).then(()=>{
       console.log(`Database connected succesful`);
 
       });

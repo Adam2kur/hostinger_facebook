@@ -36,7 +36,7 @@ var connectDB = function connectDB() {
         case 0:
           _context.prev = 0;
           _context.next = 3;
-          return regeneratorRuntime.awrap(mongoose.connect(process.env.LOCAL_CON_STR).then(function () {
+          return regeneratorRuntime.awrap(mongoose.connect(process.env.CON_STRING).then(function () {
             console.log("Database connected succesful");
           }));
 
