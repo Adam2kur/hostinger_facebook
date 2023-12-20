@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Database_documents</title>
+ <link rel="stylesheet" href="./../public/page.css">
+ <style>
+*
+{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+.container
+{
+      background: #f4f4f4;
+      width: 100%;
+      height:200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5px;
+      
+}
+.container .holder
+{
+      
+      width: 100%;
+
+}
+.container .holder .open_curly, .close_curly
+{
+      display: block;
+      margin: 0 10px;
+}
+.holder .items
+{
+     padding-left:40px ;
+     display: block;
+     flex-direction: column;
+     width: 100%;
+}
+.holder .items .item
+{
+     display: block;
+     padding: 5px 0;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+ 
+ </style>
+</head>
+<body>
+      <div class="container">
+            <div class="holder">
+                  <span class="open_curly">{</span>
+                        <div class="items">
+                              <span class="item">User_name : {{%name%}},<span>
+                              <span class="item">Password : {{%password%}},</span>
+                              <span class="item">_id : {{%id%}},</span>
+                              <span class="item">Date : {{%date%}}</span>
+                        </div>      
+                  <span class="close_curly">}</span>
+            </div>
+      </div>
+</body>
+</html>
